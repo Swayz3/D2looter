@@ -10,7 +10,6 @@ screen_height = root.winfo_screenheight()
 winx = (round(screen_width/3))
 winy = (round(screen_height/3))
 #root.title("autoloot")
-#root.configure(width=500, height=300)
 #root.geometry("{}x{}+{}+{}".format(winx, winy, winx, winy))
 #root.mainloop()
 def loot():
