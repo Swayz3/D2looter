@@ -60,10 +60,10 @@ def show():
         overlay3.withdraw()
         overlay4.withdraw()
 def loot():
-    Coord3 = pyautogui.locateCenterOnScreen('unique.png', region=(winx, winy, winx, winy))
-    Coord4 = pyautogui.locateCenterOnScreen('rune.png', region=(winx, winy, winx, winy))
     Coord = pyautogui.locateCenterOnScreen('unique.png', region=(2*cx, 2*cy, cx, cy))
     Coord2 = pyautogui.locateCenterOnScreen('rune.png', region=(2*cx, 2*cy, cx, cy))
+    Coord3 = pyautogui.locateCenterOnScreen('unique.png', region=(winx, winy, winx, winy))
+    Coord4 = pyautogui.locateCenterOnScreen('rune.png', region=(winx, winy, winx, winy))
     if Coord3 is None and Coord4 is None:
         text_var.set("No loot")
         root.update()
